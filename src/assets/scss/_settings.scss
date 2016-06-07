@@ -564,3 +564,19 @@ $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
+
+
+//prevent FOUC
+.no-js {
+  @include breakpoint(small only){
+    .top-bar{
+      display:none;
+    }
+  }
+
+  @include breakpoint(medium){
+    .title-bar{
+      display:none;
+    }
+  }
+}
