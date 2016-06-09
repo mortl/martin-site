@@ -3,9 +3,17 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import 'foundation-icon-fonts/foundation-icons.scss';
+
+
+//custom SCSS
+@import 'components/typography';
+//@import 'components/slideup';
+@import 'components/demo';
 
 @include foundation-global-styles;
 @include foundation-grid;
+
 // @include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
@@ -48,4 +56,3 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
-@import 'components/typography';

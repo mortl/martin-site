@@ -8,7 +8,6 @@
 //   3. The Grid
 //   4. Base Typography
 //   5. Typography Helpers
-//   6. Abide
 //   7. Accordion
 //   8. Accordion Menu
 //   9. Badge
@@ -557,10 +556,13 @@ $tooltip-radius: $global-radius;
 
 // 36. Top Bar
 // -----------
+$menu-background: #333;
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: $menu-background;
 $topbar-submenu-background: $topbar-background;
+$menu-background: #333;
+
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
@@ -575,7 +577,7 @@ $topbar-unstack-breakpoint: medium;
   }
 
   @include breakpoint(medium){
-    .title-bar{
+    .top-bar{
       display:none;
     }
   }
